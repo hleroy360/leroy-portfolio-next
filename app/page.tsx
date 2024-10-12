@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Script from 'next/script'
 
 /*export default function Home() {
   return (
@@ -106,92 +107,14 @@ export default function Home() {
     <>
         <Header />
         <main className="max-w-5xl mx-auto p-5"/*className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]"*/>
-
+        <div data-snack-id="@hleroy360/final-todos" data-snack-platform="web" data-snack-preview="true" data-snack-theme="light"
+              className="overflow-hidden bg-[#fbfcfd] border-solid border-black border-2 p-5 rounded-md h-[80vh] w-full"
+              /*style="overflow:hidden;background:#fbfcfd;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"*/></div>
+          <Script async src="https://snack.expo.dev/embed.js"/>
           <div className="justify-items-center min-h-[70vh] grid grid-cols-[2fr,1fr] gap-6">
             <article className="w-full p-5 bg-cyan-500/50">
               <h1>Helix LeRoy&apos;s Portfolio</h1>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
-              <p>This is my portfolio site</p>
+
             </article>
             <aside className="w-full p-5 bg-blue-500/50">
               <p>Aside content</p>
