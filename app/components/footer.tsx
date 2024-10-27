@@ -4,7 +4,7 @@
 export default function Footer() {
   return (
     <>
-      <footer className="bottom-0 sticky h-[50px] row-start-3 flex gap-6 flex-wrap items-center justify-center w-full bg-gradient-to-r from-cyan-500 to-blue-500">
+      <footer className="bottom-0 sticky h-[5vh] row-start-3 flex gap-6 flex-wrap items-center justify-center w-full bg-gradient-to-r from-cyan-500 to-blue-500">
         <nav className="flex items-center gap-12">
           <a className="hover:underline hover:underline-offset-4"
             href="/"
