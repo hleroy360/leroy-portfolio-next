@@ -20,9 +20,8 @@ export default function Home() {
         <Script async src="https://snack.expo.dev/embed.js" />
 
         {/*Project 3 - Needs to get working*/}
-        <video src={awesomeVideo} />
 
-        <div className="justify-items-center min-h-[70vh] grid grid-cols-[2fr,1fr] gap-6">
+        {/*<div className="justify-items-center min-h-[70vh] grid grid-cols-[2fr,1fr] gap-6">
           <article className="w-full p-5 bg-cyan-500/50">
             <h1>Helix LeRoy&apos;s Portfolio</h1>
 
@@ -30,7 +29,7 @@ export default function Home() {
           <aside className="w-full p-5 bg-blue-500/50">
             <p>Aside content</p>
           </aside>
-        </div>
+        </div>*/}
       </main >
       <Footer />
     </>

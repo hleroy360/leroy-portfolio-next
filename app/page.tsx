@@ -2,124 +2,118 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Script from 'next/script'
 
-/*export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
-}*/
-
 export default function Home() {
   return (
     <>
-        <Header />
-        <main className="max-w-5xl mx-auto p-5 min-h-[85vh]"/*className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]"*/>
-      
+      <Header />
+      <main className="max-w-5xl mx-auto p-5 min-h-[85vh]"/*className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]"*/>
 
-          <div className="justify-items-center min-h-[70vh] grid grid-cols-[2fr,1fr] gap-6">
-            <article className="w-full p-5 bg-cyan-500/50">
-              <h1>Helix LeRoy&apos;s Portfolio</h1>
 
-            </article>
-            <aside className="w-full p-5 bg-blue-500/50">
-              <p>Aside content</p>
-            </aside>
-          </div>
-        </main>
-        <Footer />
+        <div className="justify-items-center min-h-[70vh] grid grid-cols-[2fr,1fr] gap-6">
+          <article className="w-full p-5 bg-cyan-500/50">
+            <p>Hello, I am Helix LeRoy!</p>
+            <br />
+            <p>I have a Bachelor's degree in Information Technology with a concentration in Software Development from UNH.</p>
+            <hr />
+            <h2>Previous Internships</h2>
+            <ul>
+              <li>
+                <p>Walkin' Pets</p>
+                <a href="https://walkinpets.com/">
+                  <img src="https://walkinpets.com/cdn/shop/files/WP_PrimaryLogo_FullColor_NoTagline_RGB_72dpi.png?v=1730230554&width=600" width="200px" alt="Walkin' Pets Logo" />
+                </a>
+              </li>
+              <li>
+                <p>Canyon Components</p>
+                <a href="https://www.canyoncomponents.com/">
+                  <img src="https://www.canyoncomponents.com/_next/image?url=https%3A%2F%2Fcancomp.nyc3.cdn.digitaloceanspaces.com%2FPub%2Fimg%2Fgrphx%2FLogo%2FCanyon%2520Components%2520Official%2520Logo.png&w=256&q=75" width="200px" alt="Canyon Components Logo" />
+                </a>
+              </li>
+            </ul>
+            <hr />
+            <p>I know HTML, CSS, Tailwind, JavaScript, Typescript, jQuery, React Native, NextJS,  Python, SQL</p>
+            <p>I've worked with Microsoft Office, PhotoShop, GitHub, Visual Studio Code, Expo, Vercel, WordPress, Builder.IO, NetSuite, In8Suite MySQL</p>
+          </article>
+          <aside className="w-full p-5 bg-blue-500/50">
+
+            <h2>Languages</h2>
+            <div className="grid grid-cols-2 gap-2 m-1">
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>HTML 5</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>CSS 3</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>JavaScript</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>Python</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>SQL</figcaption>
+                </figure>
+              </a>
+            </div>
+            <h3>Libraries</h3>
+            <div className="grid grid-cols-2 gap-2">
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img  width="200px" alt="Canyon Components Logo" />
+                  <figcaption>Tailwind</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>jQuery</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>TypeScript</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="https://www.canyoncomponents.com/_next/image?url=https%3A%2F%2Fcancomp.nyc3.cdn.digitaloceanspaces.com%2FPub%2Fimg%2Fgrphx%2FLogo%2FCanyon%2520Components%2520Official%2520Logo.png&w=256&q=75" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>NextJS</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="https://www.canyoncomponents.com/_next/image?url=https%3A%2F%2Fcancomp.nyc3.cdn.digitaloceanspaces.com%2FPub%2Fimg%2Fgrphx%2FLogo%2FCanyon%2520Components%2520Official%2520Logo.png&w=256&q=75" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>React Native</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className="bg-white rounded-lg p-1">
+                  <img src="https://www.canyoncomponents.com/_next/image?url=https%3A%2F%2Fcancomp.nyc3.cdn.digitaloceanspaces.com%2FPub%2Fimg%2Fgrphx%2FLogo%2FCanyon%2520Components%2520Official%2520Logo.png&w=256&q=75" width="200px" alt="Canyon Components Logo" />
+                  <figcaption>PyGame</figcaption>
+                </figure>
+              </a>
+            </div>
+
+
+          </aside>
+        </div>
+      </main>
+      <Footer />
     </>
   );
 }

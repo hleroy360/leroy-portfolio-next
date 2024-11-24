@@ -11,21 +11,21 @@ export default function Footer() {
             target=""
             rel="noopener noreferrer"
           >
-            Link 1
+            Home
           </a>
           <a className="hover:underline hover:underline-offset-4"
-            href="/"
+            href="/projects"
             target=""
             rel="noopener noreferrer"
           >
-            Link 2
+            Projects
           </a>
           <a className="hover:underline hover:underline-offset-4"
-            href="/"
+            href="/resume"
             target=""
             rel="noopener noreferrer"
           >
-            Link 3
+            Resume
           </a>
         </nav>
 
