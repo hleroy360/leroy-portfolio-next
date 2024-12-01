@@ -2,7 +2,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Script from 'next/script'
 
-const awesomeVideo = 'https://youtu.be/NZJtHQS0cns';
+/*const awesomeVideo = 'https://youtu.be/NZJtHQS0cns';*/
 
 export default function Home() {
   return (

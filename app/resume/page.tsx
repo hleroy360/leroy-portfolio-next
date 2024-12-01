@@ -1,7 +1,5 @@
 import Header from "@/app/components/header";
 import Footer from "@/app/components/footer";
-import Script from 'next/script'
-import { Document } from 'react-pdf'
 import PDF from "../components/pdf";
 
 export default function Home() {

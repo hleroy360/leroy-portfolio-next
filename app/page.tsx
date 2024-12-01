@@ -1,116 +1,145 @@
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Script from 'next/script'
 
 export default function Home() {
+  const imgClass = "mx-auto"
+  const imgBack = "bg-white rounded-lg p-1"
+  const languageRowBase = "grid gap-2 m-2"
+  const subSection = "bg-white rounded-lg p-1"
+  const figcaption = "text-nowrap object-bottom inline-block align-bottom text-xs"
+
   return (
     <>
       <Header />
       <main className="max-w-5xl mx-auto p-5 min-h-[85vh]"/*className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]"*/>
 
 
-        <div className="justify-items-center min-h-[70vh] grid grid-cols-[2fr,1fr] gap-6">
-          <article className="w-full p-5 bg-cyan-500/50">
-            <p>Hello, I am Helix LeRoy!</p>
-            <br />
-            <p>I have a Bachelor's degree in Information Technology with a concentration in Software Development from UNH.</p>
-            <hr />
-            <h2>Previous Internships</h2>
-            <ul>
-              <li>
-                <p>Walkin' Pets</p>
-                <a href="https://walkinpets.com/">
-                  <img src="https://walkinpets.com/cdn/shop/files/WP_PrimaryLogo_FullColor_NoTagline_RGB_72dpi.png?v=1730230554&width=600" width="200px" alt="Walkin' Pets Logo" />
-                </a>
-              </li>
-              <li>
-                <p>Canyon Components</p>
-                <a href="https://www.canyoncomponents.com/">
-                  <img src="https://www.canyoncomponents.com/_next/image?url=https%3A%2F%2Fcancomp.nyc3.cdn.digitaloceanspaces.com%2FPub%2Fimg%2Fgrphx%2FLogo%2FCanyon%2520Components%2520Official%2520Logo.png&w=256&q=75" width="200px" alt="Canyon Components Logo" />
-                </a>
-              </li>
-            </ul>
-            <hr />
-            <p>I know HTML, CSS, Tailwind, JavaScript, Typescript, jQuery, React Native, NextJS,  Python, SQL</p>
-            <p>I've worked with Microsoft Office, PhotoShop, GitHub, Visual Studio Code, Expo, Vercel, WordPress, Builder.IO, NetSuite, In8Suite MySQL</p>
-          </article>
-          <aside className="w-full p-5 bg-blue-500/50">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr,1fr]  gap-6 justify-items-center min-h-[70vh] ">
 
+          <article className="w-full p-5 bg-cyan-500/50">
+            <div id="intro" className="py-5">
+              <strong><h2 className="text-center">Hello, I am Helix LeRoy!</h2></strong>
+              <br />
+              <p>I have a Bachelor&apos;s degree in Information Technology with a concentration in Software Development from UNH.</p>
+            </div>
+            <hr />
+            <div id="internships" className="py-5">
+              <h2 className="pb-5 text-center">Previous Internships</h2>
+              <div id="walkinPetsInternship" className={languageRowBase + " grid-cols-1 md:grid-cols-2"}>
+                <div className={subSection}>
+                  <a href="https://walkinpets.com/">
+                    <img className="mx-auto" src="/images/internships/WalkinPetsLogo.png" height="160px" alt="Walkin' Pets Logo" />
+                  </a>
+                </div>
+                <div id="canyonComponentsInternship" className={subSection}>
+                  <a href="https://www.canyoncomponents.com/">
+                    <img src="/images/internships/CanyonComponentsLogo.png" height="160px" alt="Canyon Components Logo" />
+                  </a>
+                  <ul className="list-disc pl-5">
+                    <li>Design new webpages that align with the template made by the design department.</li>
+                    <li>Update existing pages on company&apos;s Wix and Builder.io websites.</li>
+                    <li>Communicate between different departments to accomplish goals.</li>
+                    <li>Create Typescript components that can be used on Builder.io</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="langBar" className="grid grid-cols-5 gap-2 m-2">
+              <img className="h-[32px]" src="/images/languages/html_Logo180.png" />
+              <img className="h-[32px]" src="/images/languages/css_Logo180.png" />
+              <img className="h-[32px]" src="/images/languages/javascript_Logo180.png" />
+              <img className="h-[32px]" src="/images/languages/python_Logo180.png" />
+              <img className="h-[32px]" src="/images/languages/sql_Logo180.png" />
+            </div>
+
+            <hr />
+            <h2>Previous Experience</h2>
+            <p>I know HTML, CSS, Tailwind, JavaScript, Typescript, jQuery, React Native, NextJS,  Python, SQL</p>
+            <p>I&apos;ve worked with Microsoft Office, PhotoShop, GitHub, Visual Studio Code, Expo, Vercel, WordPress, Builder.IO, NetSuite, In8Suite MySQL</p>
+          </article>
+
+          <aside className="w-full p-5 bg-blue-500/50">
             <h2>Languages</h2>
-            <div className="grid grid-cols-2 gap-2 m-1">
+            <div className={languageRowBase + " grid-cols-3"}>
               <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>HTML 5</figcaption>
+                <figure className={imgBack} >
+                  <img src="/images/languages/HTML_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>HTML 5</figcaption>
                 </figure>
               </a>
               <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>CSS 3</figcaption>
+                <figure className={imgBack}>
+                  <img src="/images/languages/CSS_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>CSS 3</figcaption>
                 </figure>
               </a>
               <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>JavaScript</figcaption>
-                </figure>
-              </a>
-              <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>Python</figcaption>
-                </figure>
-              </a>
-              <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>SQL</figcaption>
+                <figure className={imgBack + " h-[100%]"}>
+                  <img src="/images/languages/js_Logo180.png" className={imgClass + " "} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>JavaScript</figcaption>
                 </figure>
               </a>
             </div>
+            <div className={languageRowBase + " grid-cols-[1fr,2fr]"}>
+              <a href="/">
+                <figure className={imgBack + " h-[100%]"}>
+                  <img src="/images/languages/python_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>Python</figcaption>
+                </figure>
+              </a>
+              <a href="/">
+                <figure className={imgBack + " h-[100%]"}>
+                  <img src="/images/languages/sql_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>SQL</figcaption>
+                </figure>
+              </a>
+            </div>
+            <div className={languageRowBase + " grid-cols-1"}>
+
+            </div>
             <h3>Libraries</h3>
-            <div className="grid grid-cols-2 gap-2">
+            <div className={languageRowBase + " grid-cols-2 lg:grid-cols-3"}>
               <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img  width="200px" alt="Canyon Components Logo" />
-                  <figcaption>Tailwind</figcaption>
+                <figure className={imgBack + " h-[100%]"}>
+                  <img src="/images/languages/tailwind_Logo180.png" className={imgClass + " py-3"} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>Tailwind</figcaption>
                 </figure>
               </a>
               <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>jQuery</figcaption>
+                <figure className={imgBack + " h-[100%]"}>
+                  <img src="/images/languages/jquery_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>jQuery</figcaption>
                 </figure>
               </a>
               <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>TypeScript</figcaption>
+                <figure className={imgBack + " h-[100%]"}>
+                  <img src="/images/languages/typescript_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>TypeScript</figcaption>
                 </figure>
               </a>
               <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="https://www.canyoncomponents.com/_next/image?url=https%3A%2F%2Fcancomp.nyc3.cdn.digitaloceanspaces.com%2FPub%2Fimg%2Fgrphx%2FLogo%2FCanyon%2520Components%2520Official%2520Logo.png&w=256&q=75" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>NextJS</figcaption>
+                <figure className={imgBack + " h-[100%]"}>
+                  <img src="/images/languages/nextjs_512Logo.png" className={imgClass} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>NextJS</figcaption>
                 </figure>
               </a>
               <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="https://www.canyoncomponents.com/_next/image?url=https%3A%2F%2Fcancomp.nyc3.cdn.digitaloceanspaces.com%2FPub%2Fimg%2Fgrphx%2FLogo%2FCanyon%2520Components%2520Official%2520Logo.png&w=256&q=75" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>React Native</figcaption>
+                <figure className={imgBack + " h-[100%]"}>
+                  <img src="/images/languages/ReactNative_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption + " text-xs"}>React Native</figcaption>
                 </figure>
               </a>
               <a href="/">
-                <figure className="bg-white rounded-lg p-1">
-                  <img src="https://www.canyoncomponents.com/_next/image?url=https%3A%2F%2Fcancomp.nyc3.cdn.digitaloceanspaces.com%2FPub%2Fimg%2Fgrphx%2FLogo%2FCanyon%2520Components%2520Official%2520Logo.png&w=256&q=75" width="200px" alt="Canyon Components Logo" />
-                  <figcaption>PyGame</figcaption>
+                <figure className={imgBack + " h-[100%]"}>
+                  <img src="/images/languages/pygame_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <figcaption className={figcaption}>PyGame</figcaption>
                 </figure>
               </a>
             </div>
 
 
           </aside>
+
         </div>
       </main>
       <Footer />

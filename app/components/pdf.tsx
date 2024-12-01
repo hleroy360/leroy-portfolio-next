@@ -1,5 +1,3 @@
-import { EmbedPDF } from "@simplepdf/react-embed-pdf";
-
 export default function PDF() {
   return (
     <>
