@@ -6,8 +6,7 @@ import MuxVideo from "@mux/mux-video-react";
 export default function Home() {
   const headerText = "text-lg font-bold"
   const link = "underline hover:text-sky-700"
-  const project = "grid grid-cols-1 md:grid-cols-2 py-5"
-  const project3 = "grid grid-cols-1 md:grid-cols-[1fr,2fr] py-5"
+  const project = "grid gap-5 grid-cols-1 md:grid-cols-[1fr,2fr] py-5"
   return (
     <>
       <Header />
@@ -17,8 +16,49 @@ export default function Home() {
 
           <article className="w-full p-5 bg-cyan-500/50">
 
+
+            {/*Project 3 - PyGame Project*/}
+            <div id="Project-3" className={project}>
+              <div>
+                <h3 className={headerText}>PyGame Project - Python</h3>
+                <br />
+                <p>A simple calculator app made in React Native.</p>
+                <br />
+                <p className="font-bold">Features:</p>
+                <ul className="list-disc pl-5">
+                  <li>Add a todo with its own uuid code.</li>
+                  <li>Remove todos.</li>
+                  <li>Loading and textbox animations.</li>
+                  <li>Get text of last submitted todo and copy to textbox.</li>
+                </ul>
+              </div>
+              <div>
+                <MuxVideo
+                  style={{}}
+                  src="/videos/Project3.mp4"
+                  metadata={{
+                    video_title: 'PyGame Project',
+                  }}
+                  controls
+                  muted
+                />
+              </div>
+            </div>
+            <hr/>
+
             {/*Project 1*/}
             <div id="Project-1" className={project}>
+              <div className="mx-auto">
+                <MuxVideo
+                  style={{ maxHeight: '70vh' }}
+                  src="/videos/TodoApp.mp4"
+                  metadata={{
+                    video_title: 'Todo App',
+                  }}
+                  controls
+                  muted
+                />
+              </div>
               <div>
                 <h3 className={headerText + " " + link}>
                   <a href="https://github.com/hleroy360/ReactNative-ToDoApp.git">Todo App - React Native</a>
@@ -34,18 +74,9 @@ export default function Home() {
                   <li>Get text of last submitted todo and copy to textbox.</li>
                 </ul>
               </div>
-              <div>
-                <MuxVideo
-                  style={{ maxHeight: '70vh' }}
-                  src="/videos/TodoApp.mp4"
-                  metadata={{
-                    video_title: 'Todo App',
-                  }}
-                  controls
-                  muted
-                />
-              </div>
+
             </div>
+            <hr/>
 
             {/*Project 2 - Needs to update*/}
             <div id="Project-2" className={project}>
@@ -54,20 +85,12 @@ export default function Home() {
                   <a href="https://github.com/hleroy360/lightcone-calculator-app.git">Lightcone Calculator App - React Native</a>
                 </h3>
                 <br />
-                <p>A simple todo app made in React Native.</p>
-                <br />
-                <p className="font-bold">Features:</p>
-                <ul className="list-disc pl-5">
-                  <li>Add a todo with its own uuid code.</li>
-                  <li>Remove todos.</li>
-                  <li>Loading and textbox animations.</li>
-                  <li>Get text of last submitted todo and copy to textbox.</li>
-                </ul>
+                <p>A simple calculator app made in React Native. It keeps track of the materials that are needed to level up a "lightcone" from the game Honkai Star Rail.</p>
               </div>
               <div>
                 <MuxVideo
                   style={{ maxHeight: '70vh' }}
-                  src="/videos/TodoApp.mp4"
+                  src="/videos/LightconeCalculator.mp4"
                   metadata={{
                     video_title: 'Todo App',
                   }}
@@ -75,36 +98,9 @@ export default function Home() {
                   muted
                 />
               </div>
-              <hr/>
             </div>
 
-            {/*Project 3 - PyGame Project*/}
-            <div id="Project-3" className={project3}>
-              <div>
-                <h3 className={headerText}>PyGame Project</h3>
-                <br />
-                <p>A simple todo app made in React Native.</p>
-                <br />
-                <p className="font-bold">Features:</p>
-                <ul className="list-disc pl-5">
-                  <li>Add a todo with its own uuid code.</li>
-                  <li>Remove todos.</li>
-                  <li>Loading and textbox animations.</li>
-                  <li>Get text of last submitted todo and copy to textbox.</li>
-                </ul>
-              </div>
-              <div>
-              <MuxVideo
-                style={{}}
-                src="/videos/Project3.mp4"
-                metadata={{
-                  video_title: 'PyGame Project',
-                }}
-                controls
-                muted
-              />
-              </div>
-            </div>
+
           </article>
 
         </div>
