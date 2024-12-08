@@ -33,7 +33,7 @@ export default function Home() {
                   </a>
                   <ul className="list-disc pl-5">
                     <li>Design new webpages that align with the template made by the design department.</li>
-                    <li>Update existing pages on company's Wordpress website.</li>
+                    <li>Update existing pages on company&apos;s Wordpress website.</li>
                     <li>Communicate between different departments to accomplish goals.</li>
                     <li>Update items on NetSuite and In8sync.</li>
                     <li>Update Doofinder search bar on website.</li>
@@ -59,88 +59,84 @@ export default function Home() {
             <p>I know HTML, CSS, Tailwind, JavaScript, Typescript, jQuery, React Native, NextJS,  Python, SQL</p>
             <p>I&apos;ve worked with Microsoft Office, PhotoShop, GitHub, Visual Studio Code, Expo, Vercel, WordPress, Builder.IO, NetSuite, In8Suite MySQL</p>
           */}
-            </article>
+          </article>
 
           <aside className="w-full p-2 bg-blue-500/50 md:max-h-[80vh]">
             <h2 className={header}>Languages</h2>
-            <div></div>
+            
             <div className={languageRowBase + " grid-cols-3"}>
-              <a href="/">
+              <a href="https://html.com/html5/" target="_blank">
                 <figure className={imgBack} >
-                  <img src="/images/languages/HTML_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <img src="/images/languages/HTML_Logo180.png" className={imgClass} alt="HTML5 Logo" />
                   <figcaption className={figcaption}>HTML 5</figcaption>
                 </figure>
               </a>
-              <a href="/">
+              <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
                 <figure className={imgBack}>
-                  <img src="/images/languages/CSS_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <img src="/images/languages/CSS_Logo180.png" className={imgClass} alt="CSS3 Logo" />
                   <figcaption className={figcaption}>CSS 3</figcaption>
                 </figure>
               </a>
-              <a href="/">
+              <a href="https://www.javascript.com/" target="_blank">
                 <figure className={imgBack + " h-[100%]"}>
-                  <img src="/images/languages/JS_Logo180.png" className={imgClass + " "} alt="Canyon Components Logo" />
+                  <img src="/images/languages/JS_Logo180.png" className={imgClass + " "} alt="JavaScript Logo" />
                   <figcaption className={figcaption}>JavaScript</figcaption>
                 </figure>
               </a>
             </div>
+
             <div className={languageRowBase + " grid-cols-[1fr,2fr]"}>
-              <a href="/">
+              <a href="https://www.python.org/" target="_blank">
                 <figure className={imgBack + " h-[100%]"}>
-                  <img src="/images/languages/Python_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <img src="/images/languages/Python_Logo180.png" className={imgClass} alt="Python Logo" />
                   <figcaption className={figcaption}>Python</figcaption>
                 </figure>
               </a>
-              <a href="/">
-                <figure className={imgBack + " h-[100%]"}>
-                  <img src="/images/languages/sql_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
-                  <figcaption className={figcaption}>SQL</figcaption>
-                </figure>
-              </a>
+              <figure className={imgBack + " h-[100%]"}>
+                <img src="/images/languages/sql_Logo180.png" className={imgClass} alt="SQL Logo" />
+                <figcaption className={figcaption}>SQL</figcaption>
+              </figure>
             </div>
-            <div className={languageRowBase + " grid-cols-1"}>
 
-            </div>
             <h3 className={header}>Libraries</h3>
             <div className={languageRowBase + " grid-cols-2 lg:grid-cols-3"}>
-              <a href="/">
+              <a href="https://tailwindcss.com/" target="_blank">
                 <figure className={imgBack + " h-[100%]"}>
-                  <img src="/images/languages/tailwind_Logo180.png" className={imgClass + " py-3"} alt="Canyon Components Logo" />
+                  <img src="/images/languages/tailwind_Logo180.png" className={imgClass + " py-3"} alt="Tailwind Logo" />
                   <figcaption className={figcaption}>Tailwind</figcaption>
                 </figure>
               </a>
-              <a href="/">
+              <a href="https://jquery.com/" target="_blank">
                 <figure className={imgBack + " h-[100%]"}>
-                  <img src="/images/languages/jquery_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <img src="/images/languages/jquery_Logo180.png" className={imgClass} alt="jQuery Logo" />
                   <figcaption className={figcaption}>jQuery</figcaption>
                 </figure>
               </a>
-              <a href="/">
+              <a href="https://www.typescriptlang.org/" target="_blank">
                 <figure className={imgBack + " h-[100%]"}>
-                  <img src="/images/languages/Typescript_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <img src="/images/languages/Typescript_Logo180.png" className={imgClass} alt="TypeScript Logo" />
                   <figcaption className={figcaption}>TypeScript</figcaption>
                 </figure>
               </a>
-              <a href="/">
+              <a href="https://nextjs.org/" target="_blank">
                 <figure className={imgBack + " h-[100%]"}>
-                  <img src="/images/languages/NextJS_512Logo.png" className={imgClass} alt="Canyon Components Logo" />
+                  <img src="/images/languages/NextJS_512Logo.png" className={imgClass} alt="NextJS Logo" />
                   <figcaption className={figcaption}>NextJS</figcaption>
                 </figure>
               </a>
-              <a href="/">
+              <a href="https://reactnative.dev/" target="_blank">
                 <figure className={imgBack + " h-[100%]"}>
-                  <img src="/images/languages/ReactNative_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <img src="/images/languages/ReactNative_Logo180.png" className={imgClass} alt="React Native Logo" />
                   <figcaption className={figcaption + " text-xs"}>React Native</figcaption>
                 </figure>
               </a>
-              <a href="/">
+              <a href="https://www.pygame.org/news" target="_blank">
                 <figure className={imgBack + " h-[100%]"}>
-                  <img src="/images/languages/pygame_Logo180.png" className={imgClass} alt="Canyon Components Logo" />
+                  <img src="/images/languages/pygame_Logo180.png" className={imgClass} alt="PyGame Logo" />
                   <figcaption className={figcaption}>PyGame</figcaption>
                 </figure>
               </a>
             </div>
-
 
           </aside>
 
